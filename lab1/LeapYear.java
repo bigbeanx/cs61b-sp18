@@ -17,7 +17,7 @@ public class LeapYear {
     /** Checks if a given year is leap or not
      *  @param year to be analyzed
      */
-    private static boolean isLeapYear(int year){
+    public static boolean isLeapYear(int year){
         if (year % 4 == 0){
             if (year % 100 != 0){
                 return true;
