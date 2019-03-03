@@ -77,6 +77,9 @@ public class ArrayDeque<T> {
 
     /** Removes and returns the item at the front of the deque. */
     public T removeFirst() {
+        if (this.isEmpty()) {
+            return null;
+        }
         if (this.isSparse()) {
             this.shrinkArray();
         }
@@ -89,6 +92,9 @@ public class ArrayDeque<T> {
 
     /** Removes and returns the item at the back of the deque. */
     public T removeLast() {
+        if (this.isEmpty()) {
+            return null;
+        }
         if (this.isSparse()) {
             this.shrinkArray();
         }
