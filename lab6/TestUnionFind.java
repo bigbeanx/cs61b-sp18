@@ -25,8 +25,8 @@ public class TestUnionFind {
         disjointSet.union(3, 4);
         disjointSet.union(3, 5);
         disjointSet.union(1, 4);
-        assertTrue(disjointSet.connected(1,4));
-        assertFalse(disjointSet.connected(2,6));
+        assertTrue(disjointSet.connected(1, 4));
+        assertFalse(disjointSet.connected(2, 6));
     }
 
     @Test

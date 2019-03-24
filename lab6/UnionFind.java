@@ -26,7 +26,7 @@ public class UnionFind {
         // TODO
         validate(v1);
         int root = find(v1);
-        return (- parent(root));
+        return (-parent(root));
     }
 
     /* Returns the parent of v1. If v1 is the root of a tree, returns the
